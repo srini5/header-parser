@@ -19,4 +19,4 @@ express.get("/",function(req,res){
     res.write(JSON.stringify(response));
     res.end();
     
-}).listen(8080);
+}).listen(process.env.PORT || 8080);
